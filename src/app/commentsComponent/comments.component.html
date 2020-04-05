@@ -1,0 +1,14 @@
+<hr/>
+<p *ngIf="loading">Loading...</p>
+<div class="co-md-12">
+    <div class="col-md-3 float-left" *ngFor="let track of data">
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Name : {{track.name}}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Post Id : {{track.postId}} & Id : {{track.id}}</h6>
+              <p class="card-text">Body : {{track.body}}</p>
+              <a href="#" class="card-link">Email : {{track.email}}</a>
+            </div>
+          </div>
+    </div>
+</div>

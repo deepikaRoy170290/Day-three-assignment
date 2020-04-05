@@ -1,0 +1,11 @@
+<h1>Parent Component</h1>
+
+<ul>
+    <li *ngFor="let todo of todos">
+        {{todo}} 
+        <i class="fa fa-check" aria-hidden="true" (click)="deleteList(todo)"></i>
+    </li>
+</ul>
+
+<h1>Child Component</h1>
+<app-todo-form (sendRequest)='onItemCreated($event)'></app-todo-form>
